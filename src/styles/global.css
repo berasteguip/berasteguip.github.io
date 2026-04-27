@@ -154,6 +154,29 @@ h1 {
   font-weight: 700;
 }
 
+.spotlight-title {
+  --spotlight-x: 50%;
+  --spotlight-y: 50%;
+  --spotlight-size: clamp(42px, 7vw, 96px);
+  color: var(--color-text);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .spotlight-title[data-spotlight-active="true"] {
+    background-image: radial-gradient(
+      circle var(--spotlight-size) at var(--spotlight-x) var(--spotlight-y),
+      rgba(214, 236, 255, 0.95) 0%,
+      rgba(155, 208, 255, 0.68) 14%,
+      rgba(9, 9, 9, 0.92) 42%,
+      var(--color-text) 68%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
 .hero-role {
   margin-top: 1.5rem;
   color: var(--color-text);

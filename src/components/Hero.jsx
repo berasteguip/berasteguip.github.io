@@ -1,5 +1,6 @@
 import { profile } from "../data/profile.js";
 import { publicLinks } from "../data/links.js";
+import SpotlightTitle from "./SpotlightTitle.jsx";
 
 function SystemsVisual() {
   return (
@@ -30,7 +31,7 @@ export default function Hero() {
     <section className="hero section" id="top">
       <div className="hero-content">
         <p className="eyebrow">{profile.location} technical builder</p>
-        <h1>{profile.headline}</h1>
+        <SpotlightTitle as="h1">{profile.headline}</SpotlightTitle>
         <p className="hero-role">{profile.role}</p>
         <p className="hero-summary">{profile.summary}</p>
         <div className="hero-actions" aria-label="Primary actions">

@@ -1,11 +1,12 @@
 import { contactLinks, publicLinks } from "../data/links.js";
+import SpotlightTitle from "./SpotlightTitle.jsx";
 
 export default function Contact() {
   return (
     <section className="section contact-section" id="contact">
       <div>
         <p className="section-eyebrow">Contact</p>
-        <h2>Contact and public references.</h2>
+        <SpotlightTitle as="h2">Contact and public references.</SpotlightTitle>
       </div>
       <div className="contact-panel">
         <p>
